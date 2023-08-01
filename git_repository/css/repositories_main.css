@@ -1,0 +1,268 @@
+.app-main-container {
+    display: flex;  /*기본적으로 div는 수직 정렬되기 때문에 좌우 정렬로 변경*/
+    justify-content: space-between; /* 양끝으로 div를 붙임, 자동으로 간격 생성됨 */
+    margin: 8px auto 0px;
+    padding: 0px 32px;
+    max-width: 1280px;  /* 화면 크기가 가변적으로 변할 수 있도록 */
+}
+
+.main-left {
+    margin-top: 32px;
+    width: 296px;
+}
+
+.profile-img-container{
+    position: relative;
+}
+
+.user-status-border {
+    position: absolute; /* 내가 원하는 위치로 이동 가능 */
+    bottom : 18px;
+    right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: white;    /* 기본적으로 모든 요소의 배경는 투명 */
+    cursor: pointer;
+}
+
+.img-border {
+    border: 2px solid #eee;
+    border-radius: 50%;
+    overflow: hidden;   /* 벗어난 부분 숨겨줌 */
+    width: 100%;
+    height: 296px;      /* 정사각형 이미지*/
+}
+
+.img-border img {
+    width: 100%;
+}
+
+.profile-names-container {
+    padding:  16px 0px;
+}
+
+.profile-user-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-user-username{
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.edit-profile-buttons {
+    margin-bottom: 16px;
+}
+
+.follow-container {
+    margin-bottom: 16px;
+}
+
+.follow-link {
+    color: #888;
+    text-decoration: none;
+}
+
+.follow-link, 
+.follow-font-b  { /*모든 요소 중 fa-solid가 아닌 요소만*/
+    font-weight: 300;   /*icon까지 지정하면 icon이 깨짐*/
+}
+
+.follow-font-b {
+    font-weight: 500;
+    color: #333;
+}
+
+.follow-container a:hover,
+.follow-container a:hover *{ /* 마우스 커서를 갖다대면 색상 변경 */
+    color : #0969da;
+}
+
+.company-and-address-items {
+    position: relative;
+    padding: 4px 0px 0px 24px;
+}
+
+.company-and-address-items i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.company-items-name {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.company-items-name:hover {
+    text-decoration: underline; /*마우스 갖다댈 시 밑줄*/
+}
+
+.profile-etc-container {
+    margin-top: 16px;
+    border-top: 1px solid #dbdbdb;
+    padding-top: 16px;
+}
+
+.profile-etc-title{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.achievements-items {
+    display: flex;
+    flex-wrap: wrap; /* 쌓이면 다음 줄로 넘어감 */
+}
+
+.achievements-img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.achievements-img img{
+    width: 100%;
+}
+
+.achievements-bottom {
+    margin-top: 8px;
+}
+
+.achievements-beta {
+    display: inline-block;      /* 글자가 아닌 블록의 크기에 맞춰 형성 */
+    border: 1px solid #1a7f37;
+    border-radius: 14px;
+    padding: 1.428px 8px;
+    color:  #1a7f37;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.send-feedback-link {
+    text-decoration: none;
+    color: #0969da;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.send-feedback-link:hover{
+    text-decoration: underline;
+}
+
+.organizations-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organizations-img {
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border : 1px solid #dbdbdb;
+    border-radius: 6px;
+    width: 34px;
+    height: 34px;
+    background-color: #efefef;
+}
+
+.repository-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 24px 0px;
+    width: 100%;
+}
+
+.repository-list-left span, p{
+    color: #7D8590;
+}
+
+.repository-title{
+    height: 30px;
+}
+
+.repository-name{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color : #0969da;
+}
+
+.repository-name:hover{
+    text-decoration:underline;
+}
+
+.repository-access-type{
+    margin: 0px 0px 4px 4px;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 0px 7px;
+    font-size: 12px;
+
+}
+
+.repository-description{
+    margin-bottom: 8px;
+    padding-right: 24px;
+    font-size: 14px;
+}
+
+.repository-info{
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.repository-skill-color{
+    display: inline-block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #e34c26;
+}
+
+.repository-skill-name{
+    margin-right: 16px;
+}
+
+.repository-list-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.star-buttons {
+    display: flex;
+}
+
+.star-buttons .btn-s-right{
+    border-left: none;
+}
+
+.star-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.commit-gragh {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+}
+
+.gragh-line{
+    width: 155px;
+    border-bottom: 1px solid #00d13469;
+}

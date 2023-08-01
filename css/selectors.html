@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /*전체 선택자*/
+    * {
+        font-size: 20px;
+    }
+    /*타입 선택자*/
+    button {
+        background-color: black;
+        color: white;
+    }
+    /*class 선택자*/
+    .text-input {
+        border: 1px solid blue;
+    }
+    /*id 선택자*/
+    #submit-button{
+        border-radius: 8px;
+    }
+
+</style>
+
+</head>
+<body>
+    <input type="text" class="text-input">
+    <input type="text" class="text-input">
+    <input type="text" class="text-input">
+    <input type="text" class="text-input">
+
+    <!--인라인 스타일-->
+    <button id = "submit-button" style="border: 1px solid green; color : yellow">버튼1</button> 
+    
+    <button id = "submit-button">버튼1</button>
+    <button id = "submit-button">버튼1</button>
+</body>
+</html>

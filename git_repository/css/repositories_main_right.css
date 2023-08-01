@@ -1,0 +1,22 @@
+.main-right {
+    flex-grow: 1;       /* 자식요소에게만 사용 가능, 남은 영역을 채움 */
+    max-width: 896px;
+}
+
+.repositories-main-options {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 16px 0px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.find-repositories-input {
+    margin-right: 10px;
+    border: 1px solid #dbdbdb; 
+    border-radius: 6px;
+    width: 500px;
+    max-width: 505px;
+    min-width: 220px;
+}
