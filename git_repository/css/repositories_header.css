@@ -3,3 +3,82 @@
     height: 104px;
     background-color: rgb(246, 248, 250);
 }
+
+.app-header-globalbar{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 8px;
+    font-size: 14px;
+    color : #E6EDF3;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.app-header-globalbar-start{
+    flex-grow: 1;
+    row-gap: 8px;
+}
+
+.menu{
+    display: block;
+}
+
+.app-header-globalbar-start > a{
+    margin-left: 8px;
+}
+
+.app-header-globalbar-start > div{
+    width: 32px;
+}
+
+.app-header-globalbar-end{
+    display: flex;
+    justify-content: flex-end;
+    height: 32px;
+    gap: 8px;
+}
+
+.app-header-actions{
+    display: grid;
+    color: #7D8590;
+    row-gap: 8px;
+    column-gap: 8px;
+    grid-auto-flow:column;
+}
+
+.button-withTooltip{
+    display: block;
+    position: relative;
+}
+
+.app-header-globalbar-end a {
+    position: relative;
+    display: grid;
+    grid-auto-columns: max-content;
+    /* background: transparent; */
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.app-header-notification{
+    display: block;
+}
+
+.app-header-user {
+    display: inline block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 32px;
+}
+
+.app-header-user img{
+    width: 100%;
+}
